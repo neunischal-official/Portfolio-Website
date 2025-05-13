@@ -305,9 +305,14 @@ span {
 .projects-container {
     display: flex;
     justify-content: center;
+    /* align-items: stretch; */
     align-items: center;
     flex-wrap: wrap;
     gap: 4rem;
+
+    /* overflow: hidden; */
+    /* ↓ added */
+    transition: all 0.5s ease;
 }
 
 .projects {
@@ -315,13 +320,16 @@ span {
 }
 
 .projects-box .btn {
-    margin-bottom: auto;
+    /* margin-bottom: auto; */
     margin-top: 3rem;
+    /* align-self: center; */
 }
 
 
 
 .projects-container .projects-box {
+    display: flex;
+    flex-direction: column;
     flex: 1 1 30rem;
     background: rgba(255, 255, 255, 0.933);
     padding: 2.5rem 2rem 7rem;
@@ -331,7 +339,10 @@ span {
     transition: 0.3s ease;
     cursor: pointer;
     margin-bottom: 10rem;
-    height: auto;
+    /* height: auto; */
+
+    justify-content: space-between;
+    /* align-items: center; */
 
 
 }
@@ -366,7 +377,33 @@ span {
     margin-top: 2rem;
     font-size: 1.6rem;
     text-align: center;
+
+    display: -webkit-box;
+    /* ↓ added */
+    -webkit-box-orient: vertical;
+    /* ↓ added */
+    -webkit-line-clamp: 3;
+    /* ↓ added */
+    line-clamp: 3;
+    /* standard property for compatibility */
+    overflow: hidden;
 }
+
+.projects-box p {
+    position: relative;
+    /* ensure the mask only covers the text area */
+    padding-bottom: 1.5em;
+    /* clip the bottom of the paragraph with a gradient mask */
+    -webkit-mask-image: linear-gradient(to bottom,
+            black 29%,
+            transparent);
+    mask-image: linear-gradient(to bottom,
+            black 29%,
+            transparent);
+    /* hide overflow so the faded area doesn’t produce scrollbars */
+    overflow: hidden;
+}
+
 
 .projects-box .btn {
     margin-top: 3rem;
@@ -460,6 +497,7 @@ span {
 /* Footer Section Code */
 
 .footer {
+    /* margin-bottom: 0; */
     position: relative;
     bottom: 0;
     width: 100%;
