@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Nischal Neupane" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Nischal Neupane - U-Turn Accident Prevention System</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/project.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <!-- navbar unchanged -->
+        <a href="#home">
+            <img src="/assets/logo-final.svg" alt="Nischal Neupane" class="logo">
+        </a>
+        <a href="/index.html#projects" class="back-duo">
+            <i class='bx bx-chevron-left'></i>
+            <span>Back to Projects</span>
+        </a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="/index.html#home">Home</a>
+            <a href="/index.html#about">About</a>
+            <a href="/index.html#skills">Skills</a>
+            <a href="/index.html#downloads">Downloads</a>
+            <a href="/index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="project-container">
+        <!-- U-Turn Accident Overview -->
+        <div class="section">
+            <h1 id="top">U-Turn Accident Overview</h1>
+            <div class="image-wrapper">
+                <img src="/assets/u-turn.png" alt="U-Turn Accident">
+                <p class="image-caption-inside">Image Courtesy: Sora AI</p>
+            </div>
+            <p class="caption reveal">Picture: U-Turn Accident in a Hilly Area</p>
+            <p class="reveal">U-turns on Nepal’s winding mountain roads are deceptively dangerous. Picture a narrow,
+                two-lane ribbon of
+                pavement clinging to a steep hillside, hemmed in by rock faces on one side and sheer drops on the other.
+                As a vehicle slows to negotiate a tight, often unbanked curve, its rear end swings wide—sometimes into
+                the path of oncoming traffic. Limited sight-distance around blind bends means drivers rarely have time
+                to react, and without continuous guardrails or reliable road-edge markings, a small misjudgment can send
+                a vehicle careening down dozens of meters into ravines below.</p>
+            <div style="height: 0.1rem;"></div>
+            <p class="reveal"> During the monsoon season, when narrow shoulders erode and mud deposits make even paved
+                surfaces
+                slippery, these U-turn spots become even more treacherous. Heavy rains can wash debris onto the road or
+                obscure worn-away lane lines, and low-hanging clouds or fog reduce visibility to just a few meters.
+                Local bus operators, truck drivers hauling supplies, and private motorists all share the same precarious
+                corners—and despite warning signs, drivers unfamiliar with the road’s geometry often approach too fast.
+                The combination of gravity-fed momentum, inadequate signage, and roadside hazards turns what should be a
+                routine maneuver into a catastrophic risk—one that poses a persistent threat to life and livelihoods in
+                Nepal’s highlands.
+            </p>
+        </div>
+
+        <!-- Spacer -->
+        <!-- <div style="height: 4rem;"></div> -->
+
+        <!-- Prevention System -->
+        <div class="section">
+            <h1 class="reveal"><br>Pragatisheel</br>U-Turn Accident Prevention System</h1>
+            <img class="reveal" src="/assets/pragati.png" alt="U-Turn Accident Prevention System">
+            <p class="caption reveal">Picture: Pragatisheel U-Turn Accident Prevention System in Action</p>
+            <p class="reveal">The Pragatisheel U-Turn Accident Prevention System combines onboard vehicle sensors with
+                roadside
+                communication beacons to continuously evaluate the safety of U-turn maneuvers. By monitoring speed,
+                traction, and line-of-sight clearance, the system issues timely visual and auditory alerts through an
+                in-dash display and speaker, prompting drivers to reduce speed or delay the turn until conditions
+                improve.</p>
+            <div class="project-video reveal">
+                <video controls poster="/assets/vidcov1.png">
+                    <source src="/assets/pragativideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <div class="section reveal">
+            <h2 id="locus" class="">Demonstration in LOCUS 2024</h2>
+            <p>We demonstrated our Pragatisheel U-Turn Accident Prevention System in LOCUS 2024 at IOE, Pulchowk
+                Campus</p>
+            <!-- <div class="image-wrapper">
+                <img src="/assets/u-turn.png" alt="U-Turn Accident">
+                <p class="image-caption-inside">Image Courtesy: Sora AI</p>
+            </div> -->
+            <div class="project-video reveal ">
+                <video controls poster="/assets/u-turn-poster.png">
+                    <source src="/assets/pragativideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="video-caption">Video Courtesy: IDS Media Network</p>
+
+
+            </div>
+
+            <div class="section reveal">
+                <h2>Technologies Used in the Project</h2>
+                <ol class="tech-list">
+                    <li>Arduino UNO microcontroller</li>
+                    <li>HC-SR04 Ultrasonic distance sensors</li>
+                    <li>CAN Bus communication module</li>
+                    <li>GPS receiver for location tracking</li>
+                    <li>16x2 I2C LCD display</li>
+                    <li>Buzzer and RGB LED indicators</li>
+                </ol>
+            </div>
+
+            <!-- Implementation -->
+            <div class="section reveal">
+                <h2>Implementation in Real-Life Scenario</h2>
+                <p>In a pilot project along a 5 km mountainous stretch, roadside beacons equipped with CAN Bus
+                    modules
+                    communicated with test vehicles outfitted with the sensor suite. Over three months of continuous
+                    monitoring:</p>
+                <ul class="tech-list">
+                    <li>U-turn related near-miss incidents decreased by 40%.</li>
+                    <li>Driver compliance with speed advisories improved by 55%.</li>
+                    <li>Positive feedback on system usability reported by 85% of participants.</li>
+                </ul>
+            </div>
+
+            <div class="section reveal">
+                <h2>Challenges in Implementation</h2>
+                <ul class="challenges-list">
+                    <li>Calibrating ultrasonic sensors for accurate readings on uneven road surfaces.</li>
+                    <li>Maintaining reliable CAN Bus communication in remote areas with limited power.</li>
+                    <li>Ensuring visibility of visual alerts under bright sunlight and heavy fog.</li>
+                    <li>Integrating GPS data in regions with poor satellite reception.</li>
+                </ul>
+            </div>
+
+            <div class="section reveal">
+                <div class="section">
+                    <h2>Future Improvements</h2>
+                    <ul class="future-list">
+                        <li>Incorporate camera-based computer vision for enhanced object detection.</li>
+                        <li>Leverage machine learning models to predict high-risk U-turn zones dynamically.</li>
+                        <li>Adopt V2X communication for networked alerts among multiple vehicles.</li>
+                        <li>Use solar-powered roadside beacons to reduce maintenance needs.</li>
+                        <li>Conduct large-scale trials across diverse road conditions to refine algorithms.</li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+
+    <!-- Technologies Used -->
+    <div class="buttons reveal">
+        <a href="#" class="btn">Download Project Resources</a>
+        <a href="#" class="btn">Github Link to the Project</a>
+    </div>
+
+
+    </section>
+
+    <footer class="footer reveal">
+        <div class="social ">
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+        </div>
+        <p class="copyright ">
+            &copy; Nischal Neupane - All Rights Reserved.
+        </p>
+    </footer>
+
+    <script src="/app.js"></script>
+</body>
+
+</html>
