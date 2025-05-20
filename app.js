@@ -145,16 +145,35 @@ function enableScroll() {
 }
 
 
+// function showModal(msg) {
+//     modalMessage.textContent = msg;
+//     modalOverlay.style.display = 'flex';
+//     // trigger the CSS animation
+//     requestAnimationFrame(() => {
+//         modalBox.classList.add('show');
+//     });
+//     modalOk.focus();
+//     disableScroll();  // lock scroll while modal is open
+// }
+
 function showModal(msg) {
     modalMessage.textContent = msg;
     modalOverlay.style.display = 'flex';
-    // trigger the CSS animation
-    requestAnimationFrame(() => {
-        modalBox.classList.add('show');
+
+    // Wait for the box to actually “show” before revealing the text
+    modalBox.classList.add('show');
+    modalBox.addEventListener('transitionend', function unhideText(e) {
+        if (e.propertyName === 'opacity') {
+            modalMessage.style.opacity = '1';
+            modalBox.removeEventListener('transitionend', unhideText);
+        }
     });
     modalOk.focus();
-    disableScroll();  // lock scroll while modal is open
+    disableScroll();
 }
+
+
+
 
 function hideModal() {
     // reverse the animation

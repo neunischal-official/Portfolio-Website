@@ -240,14 +240,14 @@ span {
     padding-right: 2.8rem;
 }
 
-.show:hover {
+.btn-show:hover {
     box-shadow: 0 0 1.6rem var(--main-color);
     transform: scaleX(1.05);
     padding-left: 2.8rem;
     padding-right: 2.8rem;
 }
 
-.show {
+.btn-show {
     display: inline-block;
     padding: 1rem 2.8rem;
     background: var(--main-color);
@@ -473,7 +473,7 @@ span {
 
 
 @media (max-width: 600px) {
-    .show {
+    .btn-show {
         margin-bottom: 2rem;
     }
 }
