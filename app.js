@@ -216,7 +216,7 @@ form.addEventListener('submit', async e => {
     disableScroll();
 
     const formData = { name, email, phone, subject, message };
-    const apiUrl = 'http://localhost:5000/api/contact';
+    const apiUrl = 'https://portfolio-website-qh06.onrender.com/api/contact';
 
     try {
         const response = await fetch(apiUrl, {
