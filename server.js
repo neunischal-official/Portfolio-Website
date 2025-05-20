@@ -42,7 +42,8 @@ app.post('/api/contact', (req, res) => {
     padding: 2rem;
   ">
     <div style="
-      max-width: 600px;
+      width: 100%;
+      // max-width: 30rem;
       margin: auto;
       background: #ffffff;
       border-radius: 0.8rem;

@@ -216,7 +216,7 @@ form.addEventListener('submit', async e => {
     disableScroll();
 
     const formData = { name, email, phone, subject, message };
-    const apiUrl = 'http://localhost:5000/api/contact';
+    const apiUrl = 'https://portfolio-website-qh06.onrender.com/api/contact';
 
     try {
         const response = await fetch(apiUrl, {
@@ -265,6 +265,7 @@ readMoreLinks.forEach(link => {
         logo.style.animation = 'none';
         void logo.offsetWidth;
         logo.style.animation = 'fadeInOut 2s ease-in-out 0s infinite';
+        disableScroll();
 
         // Wait for the CSS animation duration (1.2s) + small buffer
         setTimeout(() => {
